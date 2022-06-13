@@ -4,21 +4,18 @@ package com.serenitydojo;
 //objects represent real things like Numa the dog have values for the properties, name Numa, age 10s
 
 
+//import sun.security.krb5.internal.PAEncTSEnc;
+
 import java.sql.SQLOutput;
 
-public class Cat {
-    public String name;
+public class Cat extends Pet {
     public String favouriteFood;
     public int age;
 
-    public void setName(String name) {
-        this.name=name;//this is to refer to the variable.
+    public Cat(String name){ //constructor
+        super(name);
     }
 
-    public String getName() {
-        return name; // it will return a string, the name
-
-    }
 
     public void setfavouriteFood(String favouriteFood) {
         this.favouriteFood = favouriteFood;
@@ -44,7 +41,7 @@ public class Cat {
     }
 
     public void feed(String food) {
-        System.out.println(name + " eats " + food);
+        System.out.println(getName() + " eats " + food);
 
     }
 
@@ -54,10 +51,10 @@ public class Cat {
     }
 
     private void licksPaws() {
-        System.out.println(name + " is licking its paws.");
+        System.out.println(getName() + " is licking its paws.");
     }
 
     private void cleansFur() {
-        System.out.println(name + " is cleaning its fur.");
+        System.out.println(getName() + " is cleaning its fur.");
     }
 }
