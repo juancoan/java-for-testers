@@ -34,14 +34,24 @@ public class CreatingObjects {
         Reina2.setAge(10);
         System.out.println(Reina2.getAge());
 
-
-
-
-
     }
 
+        @Test
+        public void Cat_Making_Noise(){
+        Cat Reina = new Cat();
+        Reina.setName("Reinita");
+        Reina.makeNoise();
+        Reina.feed("Raw fish");
 
+    }
+    @Test
+    public void Cat_Grooming(){
+        Cat Reina = new Cat();
+        Reina.setName("Reinilla");
+        Reina.groom();
+       // Reina.licksPaws(); //i can not call directly a private method from outside.
 
+    }
 
 
 
