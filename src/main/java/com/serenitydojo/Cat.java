@@ -10,10 +10,9 @@ import java.sql.SQLOutput;
 
 public class Cat extends Pet {
     public String favouriteFood;
-    public int age;
 
-    public Cat(String name){ //constructor
-        super(name);
+    public Cat(String name, Integer age){ //constructor
+        super(name, age);
     }
 
 
@@ -23,18 +22,8 @@ public class Cat extends Pet {
 
     public String getfavouriteFood() {
         return favouriteFood; // it will return a string, the food
-
-
     }
 
-    public void setAge(int age) {
-        this.age=age;
-    }
-
-    public Integer getAge() {
-        return age;
-
-        }
 
     public void makeNoise() {
         System.out.println("Meaaaaoowwww!!! Meaaaaowwww");

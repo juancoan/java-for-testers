@@ -4,12 +4,13 @@ package com.serenitydojo;
 //objects represent real things like Numa the dog have values for the properties, name Numa, age 10s
 
 
-public class Dog extends Pet{
+public class Dog{
+    private String name;
     private String favouriteToy;
     private Integer age;
 
     public Dog(String name, String favouriteToy, int age) { //constructor
-        super(name);
+        this.name=name;
         this.age = age;
         this.favouriteToy = favouriteToy;
     }
@@ -21,5 +22,9 @@ public class Dog extends Pet{
 
     public int getAge() {
         return age;
+    }
+
+    public String getName() {
+        return name;
     }
 }
