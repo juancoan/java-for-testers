@@ -6,11 +6,11 @@ package com.serenitydojo;
 
 //import sun.security.krb5.internal.PAEncTSEnc;
 
-public class Hamster extends Pet {
-    private static final String HAMSTER_NOISE = "Squeakkkk!";
+public class Fish extends Pet {
+    private static final String FISH_NOISE = "Blooop, blooop!";
     public String favouriteGame;
 
-    public Hamster(String name, Integer age){ //constructor
+    public Fish(String name, Integer age) { //constructor
         super(name, age);
     }
 
@@ -20,11 +20,11 @@ public class Hamster extends Pet {
     }
 
     public String getfavouriteGame() {
-        return favouriteGame; // it will return a string, the food
+        return favouriteGame; // it will return a string, the GAME
     }
-    @Override
+
     public String makeNoise() {//when using return  specify the method what it returns.
-        return  HAMSTER_NOISE;
+        return FISH_NOISE;
         //System.out.println("Meaaaaoowwww!!! Meaaaaowwww");
     }
 }

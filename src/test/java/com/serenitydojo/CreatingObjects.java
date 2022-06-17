@@ -49,9 +49,10 @@ public class CreatingObjects{
     }
 
         @Test
-        public void Cat_Making_Noise(){
+        public void Cat_Making_Noise(){ //this method also exists in Cat, Dog and Pet
         Cat Reina = new Cat("Reinillo",2);
-        Reina.makeNoise();
+        System.out.printf("Cats go: " + Reina.makeNoise());
+            System.out.println(" ");
         Reina.feed("Raw fish");
 
     }
@@ -63,9 +64,30 @@ public class CreatingObjects{
 
     }
 
+    @Test //this method also exists in Cat, Dog and Pet can be overriden
+    public void Dog_Making_Noise() {
+        Dog Numoo = new Dog("Numoo", "Ball", 8);
+        System.out.printf("Dogs go: " + Numoo.makeNoise());
+    }
+
+    @Test //testing the makeNoise method having the info from every pet. different
+    public void Pets_Making_Noise(){
+    Pet Catsy = new Cat("Catsy",5);
+    Pet Hamsty = new Hamster("Hamsty",15);
+    Pet Druby = new Fish("DipsyRed", 2);
+
+        System.out.println("Cats go: " + Catsy.makeNoise());
+        System.out.println("Hamsters go: " + Hamsty.makeNoise());
+        System.out.println("Fish go: " + Druby.makeNoise());//what if the Fish class did not have a makeNoise() method? it will call the one on the Pet class
+
+        //asserting that the values are correct, what i am expecting.
+        Assert.assertEquals(Catsy.makeNoise(), "Meaaaaoowwww!!!");
+        Assert.assertEquals(Hamsty.makeNoise(),"Squeakkkk!");
+        Assert.assertEquals(Druby.makeNoise(), "Blooop, blooop!");//what if the Fish class did not have a makeNoise() method? it will call the one on the Pet class
 
 
 
+    }
 
 
 }

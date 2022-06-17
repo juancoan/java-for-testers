@@ -5,6 +5,7 @@ package com.serenitydojo;
 
 
 public class Dog{
+    private static final String DOG_NOISE = "Rrrrufff Rrrrufff";
     private String name;
     private String favouriteToy;
     private Integer age;
@@ -26,5 +27,9 @@ public class Dog{
 
     public String getName() {
         return name;
+    }
+
+    public String makeNoise() {
+        return DOG_NOISE;
     }
 }

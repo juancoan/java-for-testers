@@ -10,6 +10,7 @@ import java.sql.SQLOutput;
 
 public class Cat extends Pet {
     public String favouriteFood;
+    public static final String CAT_NOISE = "Meaaaaoowwww!!!";//final unchangable variable
 
     public Cat(String name, Integer age){ //constructor
         super(name, age);
@@ -25,8 +26,10 @@ public class Cat extends Pet {
     }
 
 
-    public void makeNoise() {
-        System.out.println("Meaaaaoowwww!!! Meaaaaowwww");
+    @Override // to enforce the overriding of methods
+    public String makeNoise() {//when using return  specify the method what it returns.
+        return  CAT_NOISE;
+        //System.out.println("Meaaaaoowwww!!!");
     }
 
     public void feed(String food) {
