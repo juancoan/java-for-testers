@@ -49,4 +49,12 @@ public class Cat extends Pet {
     private void cleansFur() {
         System.out.println(getName() + " is cleaning its fur.");
     }
+
+
+    public String play(){
+        return "Plays with string.";
+    }
+
+
+
 }

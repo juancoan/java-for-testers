@@ -27,4 +27,8 @@ public class Hamster extends Pet {
         return  HAMSTER_NOISE;
         //System.out.println("Meaaaaoowwww!!! Meaaaaowwww");
     }
+
+    public String play(){
+        return "Runs in wheel.";
+    }
 }

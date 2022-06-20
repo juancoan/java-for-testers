@@ -27,4 +27,7 @@ and also each child class has to have it's defined method on the class with the 
 and on the children public abstract String makeNoise(){ whatever code you need};*/
 
 
+    public abstract String play();
+
+
 }

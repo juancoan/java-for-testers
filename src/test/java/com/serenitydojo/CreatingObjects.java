@@ -85,6 +85,26 @@ public class CreatingObjects{
         Assert.assertEquals(Hamsty.makeNoise(),"Squeakkkk!");
         Assert.assertEquals(Druby.makeNoise(), "Blooop, blooop!");//what if the Fish class did not have a makeNoise() method? it will call the one on the Pet class
 
+      //  System.out.println(Hamsty.getClass().getSimpleName());
+
+
+    }
+    @Test
+    public void Pets_Can_Play(){
+        Pet Kitty = new Cat("Kitty",5);
+        Pet Hamstry = new Hamster("Hamstry",15);
+        Pet Ruby = new Fish("GipsyRed", 2);
+
+        System.out.println("Cats: " + Kitty.play());
+        System.out.println("Hamsters: " + Hamstry.play());
+        System.out.println("Fish: " + Ruby.play());
+
+        //asserting that the values are correct, what i am expecting.
+        Assert.assertEquals(Kitty.play(), "Plays with string.");
+        Assert.assertEquals(Hamstry.play(),"Runs in wheel.");
+        Assert.assertEquals(Ruby.play(), "Plays with bubble.");//what if the Fish class did not have a makeNoise() method? it will call the one on the Pet class
+
+        //  System.out.println(Hamsty.getClass().getSimpleName());
 
 
     }

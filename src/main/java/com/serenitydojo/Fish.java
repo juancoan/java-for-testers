@@ -27,4 +27,8 @@ public class Fish extends Pet {
         return FISH_NOISE;
         //System.out.println("Meaaaaoowwww!!! Meaaaaowwww");
     }
+
+    public String play(){
+        return "Plays with bubble.";
+    }
 }
