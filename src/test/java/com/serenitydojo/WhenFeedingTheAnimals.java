@@ -51,4 +51,5 @@ public class WhenFeedingTheAnimals {
         FoodType food = feeder.feeds(AnimalType.HAMSTER, true);
         Assert.assertEquals("Lettuce",FoodType.Lettuce.toString());
     }
+
 }
