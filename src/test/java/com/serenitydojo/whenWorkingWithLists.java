@@ -2,9 +2,7 @@ package com.serenitydojo;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 
 public class whenWorkingWithLists {
@@ -35,8 +33,49 @@ public class whenWorkingWithLists {
         }
     }
 
+        @Test
+        public void creatingAmap(){
+
+        Map<String, Integer> numberOfBallsByColor = new HashMap<>(); //Map<Key, Value> <String, Integer>, could also be new TreeMap<>();
+        numberOfBallsByColor.put("red", 8);
+        numberOfBallsByColor.put("blue", 5);
+        numberOfBallsByColor.put("green", 26);
+
+        Integer numberOfGreenBalls = numberOfBallsByColor.get("green");
+            System.out.println("There are " + numberOfGreenBalls + " green balls.");
+         }
+        /*
+         @Test
+        public void creatingAmapMoreEficiently() {
+
+            Map<String, Integer> numberOfBallsByColor = Map.of
+                    ("blue", 3, "red", 18, "purple", 9); //Map<Key, Value> <String, Integer>, could also be new TreeMap<>();
+            numberOfBallsByColor.put("orange", 8);
+        } On the pm.xml file the maven compiler plugin has to be set to 9 for this to run
+
+         numberOfBallsByColor.put(numbertoAdd);
+         numberOfBallsByColor.replace(numbertoAdd);
+         numberOfBallsByColor.getOrDefault(keyToGet, default value write 0);
 
 
+        //Iterating over the map - 2 for methods
+        System.out.println("Keys " + numberOfBallsByColor.keySet());
+
+        for (String key : numberOfBallsByColor.keySet()){
+        Integer numberOfBallsByColor = numberOfBallsByColor.get(key);
+        System.out.println(key + " => " + numberOfBallsByColor);
+
+        for (Map.entry<String,Integer> entry : numberOfBallsByColor.entrySet(){
+        System.out.println(entry.getKey() + "->" + entry.getValue());
+
+
+         }
+
+        }
+
+
+
+*/
 
 
 
